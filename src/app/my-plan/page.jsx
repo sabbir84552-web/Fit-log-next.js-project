@@ -18,9 +18,11 @@ export default function MyPlanPage() {
   const totalMinutes = todayPlan.reduce((acc, curr) => acc + (Number(curr.duration) || 0), 0);
   const totalCalories = todayPlan.reduce((acc, curr) => acc + (Number(curr.caloriesBurned) || 0), 0);
 
+  // Updated Sorting logic to include 'rating'
   const sortedList = [...currentList].sort((a, b) => {
     if (sortBy === 'duration') return (Number(b.duration) || 0) - (Number(a.duration) || 0);
     if (sortBy === 'calories') return (Number(b.caloriesBurned) || 0) - (Number(a.caloriesBurned) || 0);
+    if (sortBy === 'rating') return (Number(b.rating) || 0) - (Number(a.rating) || 0);
     return 0;
   });
 
@@ -89,6 +91,8 @@ export default function MyPlanPage() {
             >
               <option value="duration">Duration</option>
               <option value="calories">Calories</option>
+              {/* Added Rating Option Here */}
+              <option value="rating">Rating</option>
             </select>
             <ChevronDown className="w-3.5 h-3.5 absolute right-2 top-2 text-gray-400 pointer-events-none" />
           </div>
