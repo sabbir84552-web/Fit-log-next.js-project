@@ -6,7 +6,7 @@ FitLog is a dark, no-nonsense gym companion and workout planning web application
 
 ## 🔗 Live Preview & Repository
 - **Live Demo:** [ https://fitlog-weld.vercel.app ]
-- **GitHub Repository:** [  ]
+- **GitHub Repository:** [ https://github.com/sabbir84552-web/Fit-log-next.js-project ]
 
 ---
 
