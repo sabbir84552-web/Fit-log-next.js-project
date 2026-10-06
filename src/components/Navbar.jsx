@@ -11,8 +11,8 @@ export default function Navbar() {
   const { todayPlan, savedList } = usePlan();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0f1115] border-b border-gray-800/80 px-6 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-[#0f1115] border-b border-gray-800/80 px-4 sm:px-6 py-3 sm:py-4 w-full">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-4 w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-black tracking-wider text-xl text-white">
           <div className="relative w-6 h-6">

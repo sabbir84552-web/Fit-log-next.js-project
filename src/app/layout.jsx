@@ -12,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#0f1115] text-white min-h-screen flex flex-col antialiased">
+      {/* w-full ebong overflow-x-hidden add kora holo jeno kono vabei screen baire na jay */}
+      <body className="bg-[#0f1115] text-white min-h-screen flex flex-col antialiased w-full overflow-x-hidden">
         <PlanProvider>
           <Toaster 
             position="top-right" 
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
             }} 
           />
           <Navbar />
-          <main className="flex-1">{children}</main>
+          {/* main tag e w-full dewa holo jeno vitore sob component center e thake */}
+          <main className="flex-1 w-full flex flex-col">{children}</main>
           <Footer />
         </PlanProvider>
       </body>
